@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cafelibro"
+version = "0.1.0"
+description = "CLI for managing library loans in CaféLibro"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+cafelibro = "cafelibro.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
